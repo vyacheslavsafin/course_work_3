@@ -19,3 +19,16 @@ def get_filtered_data(data):
     #print(f"После фильтрации: {len(data)}")
 
     return data
+
+
+def get_last_values(data, count_last_values):
+    '''Сортирует данные по дате и выводит последние пять транзакций'''
+
+    def key_sort(x):
+        return x["date"]
+
+    data = sorted(data, key=key_sort, reverse=True)
+
+    data = data[:count_last_values]
+    return data
+
