@@ -9,7 +9,7 @@ def main():
     data = get_last_values(data, count_last_values=COUNT_LAST_VALUES)
     data = get_formatted_data(data)
 
-    print('INFO: Вывод транзакций...')
+    print('')
     for row in data:
         print(row, end='\n\n')
 

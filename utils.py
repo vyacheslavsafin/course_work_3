@@ -49,7 +49,7 @@ def get_formatted_data(data):
 
         if "from" in row:
             sender = encode_bill_info(row["from"])
-            sender = f"{ sender } ->"
+            sender = f"{ sender } -> "
         else:
             sender = ""
 
